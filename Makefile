@@ -9,7 +9,8 @@ compile-wasm:export GOARCH=wasm
 compile-wasm:
 	$(GOBUILD) -o main.wasm && rm ./html/main.wasm && cp ./main.wasm ./html/main.wasm
 compile-wasm:
-	$(GOBUILD) -o main.wasm && rm ./html/main.wasm && cp ./main.wasm ./html/main.wasm	
+	$(GOBUILD) -o main.wasm && rm ./html/main.wasm && cp ./main.wasm ./html/main.wasm
+
 compile-wasm-tinygo:export GOOS=js
 compile-wasm-tinygo:export GOARCH=wasm
 compile-wasm-tinygo:
